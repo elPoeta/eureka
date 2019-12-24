@@ -1,2 +1,2 @@
 # eureka
-A shuffle lotery numbers
+A shuffle lottery numbers

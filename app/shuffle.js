@@ -1,6 +1,7 @@
 class Shuffle {
+
   constructor({totalNumbers}){
-    this.lotery = this.generateNumbers(totalNumbers);
+    this.lotteryNumbers = this.generateNumbers(totalNumbers);
   }
 
   generateNumbers(totalNumbers) {
@@ -12,19 +13,19 @@ class Shuffle {
   }
 
   shuffleNumbers() {
-    const length = this.lotery.length;
+    const length = this.lotteryNumbers.length;
     for (let i = 0; i < length; i++) {
-        const x = this.lotery[i];
+        const x = this.lotteryNumbers[i];
         const y = Math.floor(Math.random() * length);
-        const z = this.lotery[y];
-        this.lotery[i] = z;
-        this.lotery[y] = x;
+        const z = this.lotteryNumbers[y];
+        this.lotteryNumbers[i] = z;
+        this.lotteryNumbers[y] = x;
     }
     return this;
   }
 
   getShuffledNumbers() {
-    return this.lotery;
+    return this.lotteryNumbers;
   }
 }
 
