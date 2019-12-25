@@ -7,12 +7,12 @@
 
 body {
   font-family: 'Kaushan Script', cursive;
-  background: #C19A6B;
+  /*background: #C19A6B;
   color: #A37C4D;
   background: linear-gradient(to bottom, #C19A6B 0%, #B28B5C 100%);
   border: 1px solid #A37C4D;
   text-shadow: 0 1px 0 #D0A97A;
-  box-shadow: inset 0 1px 0 #D0A97A;
+  box-shadow: inset 0 1px 0 #D0A97A;*/
 
 }
 
@@ -40,6 +40,10 @@ body {
   padding: 0 8px;
 }
 
+.cage {
+  display: flex;
+  justify-content: center;
+}
 .result .numbers {
   display: block;
   padding-top: 20px;
@@ -89,4 +93,131 @@ body {
     opacity: 1;
     transform: translate(0, 0) scale(1);
   }
+}
+.machine {
+  width: 20em;
+  height: 20em;
+  border: 1px solid #444; 
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 10px 10px RGBA(0, 0, 0, 0.3), inset 0px -10px 30px RGBA(0, 0, 0, 0.6);
+}
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.spin {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  animation: spin 1.6s linear infinite;
+  transition: top 1s linear;
+}
+@keyframes ball {
+  50% {
+    transform: rotate(var(--rot)) translateY(10em);
+  }
+}
+
+.ball {
+  --rot: 0deg;
+  position: absolute;
+  left: 10em;
+  width: 1em;
+  height: 1em;
+  background: rgb(53, 53, 63);
+  border-radius: 50%;
+  transform-origin: 0 5em;
+  transform: rotate(var(--rot));
+  animation: ball 0.4s linear infinite;
+}
+.ball:nth-of-type(1) {
+  background-color: #ce0074;
+}
+.ball:nth-of-type(2) {
+  --rot: 10deg;
+  animation-duration: 0.5s;
+  background-color: #801515;
+}
+.ball:nth-of-type(3) {
+  --rot: 20deg;
+  animation-duration: 0.9s;
+  background-color: #000;
+}
+.ball:nth-of-type(4) {
+  --rot: 30deg;
+  animation-duration: 0.6s;
+  background-color: #261758;
+}
+.ball:nth-of-type(5) {
+  --rot: 40deg;
+  animation-duration: 0.8s;
+  background-color: #f3cf21;
+}
+.ball:nth-of-type(6) {
+  --rot: 50deg;
+  animation-duration: 0.7s;
+  background-color: #ff8500;
+}
+.ball:nth-of-type(7) {
+  --rot: 60deg;
+  animation-duration: 1s;
+  background-color: #295b10;
+}
+.ball:nth-of-type(8) {
+  --rot: 70deg;
+  animation-duration: 0.9s;
+  background-color: #009c9c;
+}
+.ball:nth-of-type(9) {
+  --rot: 80deg;
+  animation-duration: 0.5s;
+  background-color: #0236ad;
+}
+.ball:nth-of-type(10) {
+  --rot: 90deg;
+  animation-duration: 0.7s;
+  background-color: #caa472;
+}
+.ball:nth-of-type(11) {
+  --rot: 100deg;
+  animation-duration: 0.6s;
+  background-color: #801515;
+}
+.ball:nth-of-type(12) {
+  --rot: 110deg;
+  animation-duration: 0.8s;
+  background-color: #000;
+}
+.ball:nth-of-type(13) {
+  --rot: 120deg;
+  animation-duration: 0.4s;
+  background-color: #261758;
+}
+.ball:nth-of-type(14) {
+  --rot: 130deg;
+  animation-duration: 0.5s;
+  background-color: #f3cf21;
+}
+.ball:nth-of-type(15) {
+  --rot: 140deg;
+  animation-duration: 0.4s;
+  background-color: #ff8500;
+}
+.ball:nth-of-type(16) {
+  --rot: 150deg;
+  animation-duration: 0.7s;
+  background-color: #295b10;
+}
+.ball:nth-of-type(17) {
+  --rot: 160deg;
+  animation-duration: 0.8s;
+  background-color: #009c9c;
+}
+.ball:nth-of-type(18) {
+  --rot: 170deg;
+  animation-duration: 0.9s;
+  background-color: #0236ad;
 }
