@@ -20,13 +20,13 @@
   </header>
  <main class="container">
   <section id="bingo" class="bingo">
-    <input type="number" name="lotto" min="0" max="99" step="1" value="99">
+    <input type="number" id="ballsQuantity" name="ballsQuantity" min="3" max="99" step="1" value="99">
   </section>
-  <section id="numbers" class="cage"> 
+  <section id="ball-numbers" class="cage"> 
 
-  <div class="machine">
-    <div class="numbers">
-      <span class="number">12</span>
+  <div id="machineCage" class="machine-cage">
+    <div class="numbers hidden">
+      <span id="number" class="number"></span>
     </div>
     <div class="spin">
     <div class="ball"></div>

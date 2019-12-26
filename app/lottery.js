@@ -27,6 +27,10 @@ class Lottery {
   getShuffledNumbers() {
     return this.lotteryNumbers;
   }
+
+  getNumber() {
+    return this.lotteryNumbers.shift();
+  }
 }
 
 export default Lottery;

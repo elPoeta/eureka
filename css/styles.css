@@ -44,13 +44,13 @@ body {
   display: flex;
   justify-content: center;
 }
-.cage .numbers {
+.numbers {
   display: block;
   align-self: center;
   text-align: center;
   margin-top: 25%;
 }
-.cage .numbers .number {
+.number {
   display: inline-block;
   font-size: 5em;
   width: 2em;
@@ -95,7 +95,7 @@ body {
     transform: translate(0, 0) scale(1);
   }
 }
-.machine {
+.machine-cage {
   width: 20em;
   height: 20em;
   border: 1px solid #444; 
@@ -221,4 +221,8 @@ body {
   --rot: 170deg;
   animation-duration: 0.9s;
   background-color: #0236ad;
+}
+
+.hidden {
+  display: none;
 }
