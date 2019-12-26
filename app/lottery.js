@@ -1,4 +1,4 @@
-class Shuffle {
+class Lottery {
 
   constructor({totalNumbers}){
     this.lotteryNumbers = this.generateNumbers(totalNumbers);
@@ -29,4 +29,4 @@ class Shuffle {
   }
 }
 
-export default Shuffle;
+export default Lottery;

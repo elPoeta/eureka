@@ -44,12 +44,13 @@ body {
   display: flex;
   justify-content: center;
 }
-.result .numbers {
+.cage .numbers {
   display: block;
-  padding-top: 20px;
+  align-self: center;
   text-align: center;
+  margin-top: 25%;
 }
-.result .numbers > .number {
+.cage .numbers .number {
   display: inline-block;
   font-size: 5em;
   width: 2em;
