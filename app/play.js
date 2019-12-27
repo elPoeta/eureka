@@ -20,7 +20,8 @@ class Play {
          )).join('')}       
          </div>
         </div> 
-        </section>`;
+        </section>
+        <section id="board"></section>`;
         return this; 
     }
 
@@ -30,6 +31,7 @@ class Play {
         this.machineCage = document.querySelector('#machineCage');
         this.spin = document.querySelector('.spin');
         this.numbers = document.querySelector('.numbers');
+        this.board = document.querySelector('#board');
         this.tableOfNumbers = [];
         this.numberShift;
         this.machineCage = this.machineCage.addEventListener('click', this.handlerBalls.bind(this));
@@ -44,12 +46,20 @@ class Play {
             this.luckyNumber.innerHTML = this.numberShift
             this.numbers.classList.remove('hidden');
             this.spin.classList.add('hidden');
+            this.drawBoard();
            }
        } else if(this.tableOfNumbers.length-1 < this.ballsQuantity){
            this.numbers.classList.add('hidden');
            this.spin.classList.remove('hidden');
        }
      }
+
+    drawBoard() {
+      this.board.innerHTML = 
+      `${this.tableOfNumbers.map(ball =>(
+        `<span>${ball} &nbsp;&nbsp;</span>`  
+      )).join('')}`
+    } 
 }
 
 export default Play;
