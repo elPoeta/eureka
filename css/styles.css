@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Kaushan Script', cursive;
-  background: linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207)) 0% 0% / 300% 300%; animation: 60s ease 0s infinite normal none running;
+  background: linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207)) 0% 0% / 300% 300%; 
+
   -webkit-animation: gradientAnimation 30s ease infinite;
   -moz-animation: gradientAnimation 30s ease infinite;
   animation: gradientAnimation 30s ease infinite;
@@ -146,7 +147,7 @@ body {
 .machine-cage {
   width: 20em;
   height: 20em;
-  border: 1px solid #444; 
+ /* border: 1px solid #444; */ 
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0px 10px 10px RGBA(0, 0, 0, 0.3), inset 0px -10px 30px RGBA(0, 0, 0, 0.6);
