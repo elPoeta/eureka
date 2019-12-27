@@ -1,12 +1,12 @@
 class Lottery {
 
-  constructor({totalNumbers}){
-    this.lotteryNumbers = this.generateNumbers(totalNumbers);
+  constructor({ballsQuantity}){
+    this.lotteryNumbers = this.generateNumbers(ballsQuantity);
   }
 
-  generateNumbers(totalNumbers) {
+  generateNumbers(ballsQuantity) {
     let numbers = [];
-    for(let i=0; i <= totalNumbers; i++){
+    for(let i=0; i <= ballsQuantity; i++){
       numbers[i] = i;
    }
    return numbers;

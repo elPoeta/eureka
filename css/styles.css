@@ -79,6 +79,7 @@ body {
 .cage {
   display: flex;
   justify-content: center;
+  margin-top: 2em;
 }
 .numbers {
   display: block;

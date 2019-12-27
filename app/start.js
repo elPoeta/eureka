@@ -24,7 +24,7 @@ class Start {
 
     handlerStartGame(e) {
         const ballsQuantity = document.querySelector('#ballsQuantity').value;  
-        Play.render({ballsQuantity});
+        new Play({ballsQuantity}).render().initElements();
       }
 }
 
