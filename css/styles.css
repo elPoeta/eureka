@@ -40,6 +40,42 @@ body {
   padding: 0 8px;
 }
 
+.init {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(228, 241, 254, 1);
+  padding: 7em;
+  border: 2px solid #333;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px RGBA(31,58,147, 0.3), inset 0px -10px 30px RGBA(31,58,147, 0.6);
+  transform: translate(-50%, -50%);
+}
+
+.init-start {
+  display: flex;
+  flex-direction: column;
+}
+.init-start input[type='number'] {
+  padding: 10px;
+  border: 3px solid #333;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: .4em;
+  margin-bottom: 1em;
+}
+
+#startButton {
+  padding: .5em;
+    outline: none;
+    border-radius: .4em;
+    border: 2px solid #1b3456;
+    background-color: green;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+}
 .cage {
   display: flex;
   justify-content: center;

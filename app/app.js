@@ -1,5 +1,17 @@
-console.log("EUREKA - BINGO");
-import Lottery from './lottery.js';
+import Start from './start.js';
+new Start().render().startGame();
+/*
+const startButton = document.querySelector('#startButton');
+
+const startGame = e => {
+  const ballsQuantity = document.querySelector('#ballsQuantity').value;  
+  Play.render({ballsQuantity});
+}
+
+startButton.addEventListener('click', startGame);
+
+
+
 const totalNumbers = 3;
 const lottery = new Lottery({totalNumbers}).shuffleNumbers();
 console.log(lottery.getShuffledNumbers());
@@ -27,5 +39,5 @@ const showNumber = e => {
 
 machineCage.addEventListener('click', showNumber);
 
-
+*/
 
