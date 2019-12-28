@@ -48,7 +48,7 @@ class Play {
             this.spin.classList.add('hidden');
             this.drawBoard();
            }
-       } else if(this.tableOfNumbers.length-1 < this.ballsQuantity){
+       } else if(this.tableOfNumbers.length < this.ballsQuantity){
            this.numbers.classList.add('hidden');
            this.spin.classList.remove('hidden');
        }

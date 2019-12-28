@@ -9,7 +9,7 @@ class Start {
         this.root.innerHTML =  
         `<section class="init">
            <div class="init-start">
-             <input type="number" id="ballsQuantity" name="ballsQuantity" min="9" max="99" step="10" value="99">
+             <input type="number" id="ballsQuantity" name="ballsQuantity" min="10" max="90" step="10" value="90">
              <button id="startButton">Start!</button>
             </div>
         </section>`;

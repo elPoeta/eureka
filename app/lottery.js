@@ -6,8 +6,8 @@ class Lottery {
 
   generateNumbers(ballsQuantity) {
     let numbers = [];
-    for(let i=0; i <= ballsQuantity; i++){
-      numbers[i] = i;
+    for(let i=0; i < ballsQuantity; i++){
+      numbers[i] = i+1;
    }
    return numbers;
   }
